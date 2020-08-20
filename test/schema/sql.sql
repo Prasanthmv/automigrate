@@ -4,3 +4,7 @@
 create table t1 (a int primary key, b text);
 create index t1a on t1 (a);
 create table t2 (a int primary key);
+
+create table t12 (a int primary key, b text);
+create index t12a on t1 (a);
+create table t22 (a int primary key);
