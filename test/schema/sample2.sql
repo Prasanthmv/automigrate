@@ -24,3 +24,7 @@ CREATE TABLE account_roles (
   FOREIGN KEY (user_id)
       REFERENCES accounts (user_id)
 );
+
+CREATE SEQUENCE test_sequence
+INCREMENT 1
+START 0;
