@@ -4,6 +4,7 @@ CREATE TABLE accounts (
 	username VARCHAR ( 50 ) UNIQUE NOT NULL,
 	user_password VARCHAR ( 50 ) NOT NULL,
 	email VARCHAR ( 255 ) UNIQUE NOT NULL,
+    user_image_url text,
 	created_on TIMESTAMP NOT NULL,
     last_login TIMESTAMP 
 );
