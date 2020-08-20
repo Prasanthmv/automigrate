@@ -12,7 +12,8 @@ CREATE TABLE accounts (
 -- step2
 CREATE TABLE roles(
    role_id serial PRIMARY KEY,
-   role_name VARCHAR (255) UNIQUE NOT NULL
+   role_name VARCHAR (255) UNIQUE NOT NULL,
+   role_desc VARCHAR(255)
 );
 
 CREATE TABLE account_roles (
@@ -26,6 +27,7 @@ CREATE TABLE account_roles (
       REFERENCES accounts (user_id)
 );
 
+-- step3
 CREATE SEQUENCE test_sequence
 INCREMENT 1
 START 0;
